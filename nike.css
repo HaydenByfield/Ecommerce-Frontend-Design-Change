@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+
+
+header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* Header Top Layer UI */
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.top-layer {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.top-layer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-layer ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.top-layer h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+}
+
+.top-layer ul li a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+
+/* Header Bottom Layer UI */
+.video-design {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  height: 13%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.bottom-layer {
+  display: grid;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+}
+
+#sports-gear-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.bottom-layer ul {
+  display: flex;
+  margin: 0 100px;
+  list-style: none;
+  font-size: 20px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  scroll-behavior: smooth;
+}
+
+.bottom-layer ul li {
+  /* Ensures their is only 4 items displayed at a time */
+  flex: 0 0 calc((100% - 30px) / 3);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.bottom-layer ul li a {
+
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.bottom-layer ul li a:hover {
+  opacity: 0.5;
+}
+
+.scroll-keys {
+  color: white;
+  font-size: 40px;
+  width: 10%;
+  border: 0;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-keys:active {
+  opacity: 0.5;
+}
+
+
+/* Main */
+main {
+  margin: 30px 0;
+}
+
+#body-title {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 250px;
+  margin: 20px 20px;
+  height: 500px;
+}
+
+.Slogan {
+  display: grid;
+  grid-template-rows: repeat(4, 0.3fr);
+}
+
+.Slogan button {
+  background-color: red;
+  border-style: none;
+  width: 400px;
+  height: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.Slogan button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.Slogan button:active {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+#par1 {
+  color: red;
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+#par2 {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 80px;
+  text-align: justify;
+}
+
+#par3 {
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  word-spacing: -6px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  object-fit: cover;
+  min-width: 95%;
+  min-height: 100%;
+  height: 500px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+#display {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  margin: 0 0;
+  padding: 30px 30px;
+  background-color: black;
+
+}
+
+#wardrobe {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(251, 5, 5);
+}
+
+#card-text {
+  margin-top: 10px;
+  font-size: 40px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid rgb(42, 40, 40);
+  border-radius: 10px;
+  width: 33%;
+  height: 400px;
+  background-color: rgb(42, 40, 40);
+}
+
+.card:hover {
+  background-color: rgb(71, 68, 68);
+  cursor: pointer;
+}
+
+.card:active {
+  opacity: 0.5;
+}
+
+.card img {
+  object-fit: cover;
+  min-width: 75%;
+  max-height: 250px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.number {
+  color: white;
+  margin-left: 30px;
+  width: 300px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.type {
+  margin-left: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-rows: repeat(4, 0.7fr);
+  color: rgb(0, 0, 0);
+  margin: 50px 0;
+}
+
+footer .additional-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .social-media a img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .social-media a img:hover {
+  width: 35px;
+  height: 35px;
+}
+
+
+footer #copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+footer .legal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a:hover {
+  color: red;
+  cursor: pointer;
+}

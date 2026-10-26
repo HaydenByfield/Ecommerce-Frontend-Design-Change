@@ -97,7 +97,7 @@ img {
 
 .bottom-layer ul li {
   /* Ensures their is only 4 items displayed at a time */
-  flex: 0 0 calc((100% - 30px) / 3);
+  flex: 0 0 calc((100% - 50px) / 3);
   min-width: 0;
   box-sizing: border-box;
 }
@@ -105,11 +105,12 @@ img {
 .bottom-layer ul li a {
 
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
   position: relative;
   z-index: 1;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .bottom-layer ul li a:hover {

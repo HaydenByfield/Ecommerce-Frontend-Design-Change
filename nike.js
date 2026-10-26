@@ -18,7 +18,7 @@ window.onload = function () {
     event.preventDefault();
     sport_list.scrollBy(
       {
-        left: 400,
+        left: 350,
         behavior: "smooth"
       }
     )
@@ -29,7 +29,7 @@ window.onload = function () {
     event.preventDefault();
     sport_list.scrollBy(
       {
-        left: -400,
+        left: -350,
         behavior: "smooth"
       }
     )

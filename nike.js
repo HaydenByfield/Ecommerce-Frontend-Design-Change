@@ -36,8 +36,11 @@ window.onload = function () {
   })
 
   function UpdateSlide() {
+    /*prevSlide = currentSlide;*/
+
     // Removes the current active class on the first image of index 0
     slides[currentSlide].classList.remove("active")
+    /*slides[prevSlide].classList.add("previous")*/
 
     // Increments the index to ensure it transitions to the next index
     // The Divisibility is used to by the slide length is to ensure it returns back to the first index after each rotation
@@ -46,6 +49,8 @@ window.onload = function () {
 
     //Adds the new active class to the next slide 
     slides[currentSlide].classList.add("active")
+
+    /*setTimeout(slides[currentSlide].classList.remove("previous"), 1000)*/
 
   }
 
